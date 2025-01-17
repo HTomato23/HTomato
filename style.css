@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary-color: #0c0c0c;
+    --secondary-color: #f1f6f9;
+    --third-color: #151515;
+    --fourth-color: #e90074;
+    --accent-color: #0b8494;
+    --largest-font: 45px;
+}
+
+body {
+    background: var(--primary-color);
+    font-family: "Outfit";
+}
+
+/* Preset Design */
+
+.bg-accent-color {
+    background-color: var(--accent-color) !important;
+}
+
+.bg-accent-color-2 {
+    background-color: var(--third-color) !important;
+}
+
+.text-accent-color {
+    color: var(--accent-color) !important;
+}
+
+.text-accent-color-2 {
+    color: var(--fourth-color);
+}
+
+.text-white {
+    color: var(--secondary-color) !important;
+}
+
+.fs-lg {
+    font-size: var(--largest-font) !important;
+}
+
+.btn-size {
+    height: 40px !important;
+    width: 150px !important;
+    border-radius: 10px !important;
+}
+
+.img-ht {
+    height: 620px !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+.btn {
+    transition: .5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--fourth-color) !important;
+    color: var(--secondary-color) !important;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.animated-icon {
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.animated-icon:hover {
+    transform: rotate(180deg);
+    color: #f1f6f9 !important;
+}
+
+/* Get Started Css */
+
+.tag-content-w {
+    width: 60% !important;
+}
+
+/* About CSS */
+
+#about {
+    background-color: var(--third-color);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--secondary-color) !important;
+    background-color: var(--third-color) !important;
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+/* Expertise CSS */
+
+.card-scale {
+    overflow: hidden !important;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.card-scale:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact CSS */
+
+.social-effect {
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.social-effect:hover {
+    opacity: 0.5;
+    transform: translateY(-10px);
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.2px);
+        -webkit-backdrop-filter: blur(7.2px);
+    }
+}
+
+@media (min-width: 992px) {
+    .w-60 {
+        width: 60% !important;
+    }
+
+    .w-40 {
+        width: 40% !important;
+    }
+}
